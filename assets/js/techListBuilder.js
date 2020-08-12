@@ -1,5 +1,5 @@
 const techBullet = (tech) => {
-  const [name, iconClass, iconText, description] = tech;
+  const [name, iconClass, iconText, description, treehouse] = tech;
 
   return `
     <section>
@@ -7,6 +7,10 @@ const techBullet = (tech) => {
         <i class="${iconClass}">${iconText}</i>
       </span>
       <h3>${name}</h3>
+      ${treehouse 
+        ? `<p>Treehouse Points: ${treehouse.toLocaleString()}</p>`
+        : ``
+      }
       <p>${description}</p>
     </section>
   `
@@ -14,15 +18,22 @@ const techBullet = (tech) => {
 
 const techList = {
   "frontEnd": {
-    "ReactJS": {
-      iconClass: "fab fa-react",
-    }, 
     "JavaScript": {
       iconClass: "fab fa-js-square",
     },
+    "ReactJS": {
+      iconClass: "fab fa-react",
+    }, 
     "TypeScript": {
       iconClass: "", // TODO
       iconText: "TS",
+    },
+    "HTML": {
+      iconClass: "fab fa-html5",
+    },
+    "CSS": {
+      iconClass: "fab fa-css3-alt",
+      // description: "Material UI, Semantic UI, Bootstrap",
     },
     "JSX": {
       iconClass: "",
@@ -34,13 +45,6 @@ const techList = {
     "Apollo": {
       iconClass: "", // TODO
       iconText: "Ap",
-    },
-    "HTML5": {
-      iconClass: "fab fa-html5",
-    },
-    "CSS3": {
-      iconClass: "fab fa-css3-alt",
-      description: "Styling libraries include: Material UI, Semantic UI, Bootstrap"
     },
   },
   "backEnd": {
@@ -94,7 +98,8 @@ const makeList = (listName) => {
       key,
       value.iconClass,
       value.iconText ? value.iconText: "",
-      value.description ? value.description: ""
+      value.description ? value.description: "",
+      value.treehouse ? treeHouseProfile.points[key] : ""
     ]);
   };
 
