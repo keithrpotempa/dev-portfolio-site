@@ -1,4 +1,5 @@
-import apiManager from "./apiManager.js";
+import apiManager from "../apiManager.js";
+import objectSorter from "../helpers/objectSorter.js";
 
 const treeHouseProfile = apiManager.getTreeHouseProfile();
 // const codeWarsProfile = apiManager.getCodeWarsProfile();
@@ -8,13 +9,9 @@ Promise.all([treeHouseProfile])
   })) 
 
 const profileRowBuilder = (allRows) => {
-  let html;
-  const sortedRows = {};
-  Object.entries(allRows)
-    .sort((a, b) => b[1] - a[1])
-    .forEach(([key, val]) => {
-      sortedRows[key] = val;
-    });
+  let html = "";
+  const sortedRows = objectSorter(allRows);
+
   for (const [techName, pointValue] of Object.entries(sortedRows)) {
     if (pointValue !== 0 && techName !== "total") {
       html += 
@@ -25,7 +22,6 @@ const profileRowBuilder = (allRows) => {
           </tr>
         `
     }
-    console.log(html)
   }
   return html;
 }
@@ -36,7 +32,7 @@ const socialProfile = (platformName, data) => {
   let tableHtml = 
   `
     <section>
-      <h2>${platformName} Profile</h2>
+      <h2>${platformName}</h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -52,6 +48,5 @@ const socialProfile = (platformName, data) => {
       </div>
     </section>
   `;
-  console.log(tableHtml)
   profileDiv.innerHTML = tableHtml
 }
