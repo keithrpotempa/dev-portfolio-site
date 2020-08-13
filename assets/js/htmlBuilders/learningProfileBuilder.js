@@ -5,7 +5,7 @@ const treeHouseProfile = apiManager.getTreeHouseProfile();
 // const codeWarsProfile = apiManager.getCodeWarsProfile();
 Promise.all([treeHouseProfile])
   .then(response => response.forEach(profile => {
-    socialProfile("Treehouse", profile)
+    learningProfile("Treehouse", profile)
   })) 
 
 const profileRowBuilder = (allRows) => {
@@ -26,7 +26,7 @@ const profileRowBuilder = (allRows) => {
   return html;
 }
 
-const socialProfile = (platformName, data) => {
+const learningProfile = (platformName, data) => {
   const profileDiv = document.getElementById(platformName.toLowerCase());
   let rowsHtml = profileRowBuilder(data.points)
   let tableHtml = 
