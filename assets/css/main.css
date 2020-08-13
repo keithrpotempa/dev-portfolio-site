@@ -2568,6 +2568,13 @@ input, select, textarea {
 		position: relative;
 	}
 
+		.project {
+			width: 25em;
+			height: 25em;	
+			/* max-width: 100%; */
+			/* height: auto; */
+		}
+
 		.image img {
 			border-radius: 0.25em;
 			display: block;

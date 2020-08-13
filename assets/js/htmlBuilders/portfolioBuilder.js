@@ -1,6 +1,6 @@
 import projects from "../builderData/projects.js"
 
-const makeProjectHTML = (project) => {
+const makeProjectHTML = (project, index) => {
   const {
     name,
     description,
@@ -11,15 +11,26 @@ const makeProjectHTML = (project) => {
     altText
    } = project;
 
+  // Build the imageHTML now to place later
+  const imageHTML = 
+  `
+  <div class="image">      
+    <a href="${imgUrl}">
+      <img 
+        src="${imgUrl}" 
+        alt="${altText}" 
+        data-position="center center" 
+        class="project"
+      />
+    </a>
+  </div>
+  `
+
+  // Even indices have images on the left,
+  // Odd appear on the right 
   return `
     <section>
-      <a href="${imgUrl}" class="image">
-        <img 
-          src="${imgUrl}" 
-          alt="${altText}" 
-          data-position="center center" 
-        />
-      </a>
+      ${index % 2 === 0 ? imageHTML : ""}
       <div class="content">
         <div class="inner">
           <h2>${name}</h2>
@@ -57,13 +68,14 @@ const makeProjectHTML = (project) => {
           </ul>
         </div>
       </div>
+      ${index % 2 !== 0 ? imageHTML : ""}
     </section>
   `;
 }
 
 const makePortfolioHTML = (projects) => {
   const listDiv = document.getElementById("portfolio");
-  projects.forEach(project => listDiv.innerHTML += makeProjectHTML(project)) 
+  projects.forEach((project, index) => listDiv.innerHTML += makeProjectHTML(project, index)) 
 }
 
 makePortfolioHTML(projects);

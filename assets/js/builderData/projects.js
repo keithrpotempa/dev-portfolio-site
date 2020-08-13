@@ -5,7 +5,7 @@ export default [
     description: "A code snippet from code written for a drag-n-drop trip planning feature during my internship with SPLOR Travel.",
     codeLink: "https://github.com/keithrpotempa/horizontal-dragndrop-with-react-beautiful-dnd",
     liveLink: "https://codesandbox.io/s/horizontal-dragndrop-with-react-beautiful-dnd-9kneq",
-    imgUrl: "images/pic01.jpg",
+    imgUrl: "https://res.cloudinary.com/krp/image/upload/v1596032990/keithpotempa.com/Splor_DND_3.gif",
     altText: "alt text"
   },
   {
@@ -14,7 +14,7 @@ export default [
     description: "For my front-end capstone project at NSS, I created a React app for creacting characters in a favorite tabletop roleplaying game of mine, Fate Core. I was excited to experiment with technologies not covered in class: including Semantic UI React, pagination, and multi-step forms.",
     codeLink: "https://github.com/keithrpotempa/fate-character-codex",
     liveLink: "",
-    imgUrl: "images/pic01.jpg",
+    imgUrl: "https://res.cloudinary.com/krp/image/upload/v1586974193/keithpotempa.com/FCC/5_compressed_v4zdvp.jpg",
     altText: "alt text"
   },
   {
