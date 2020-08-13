@@ -8,12 +8,7 @@ const techBullet = (tech) => {
       <span class="icon solid major">
         <i class="${iconClass}">${iconText}</i>
       </span>
-      <h3>${name}</h3>
-      ${treehouse 
-        ? `<p>Treehouse Points: ${treehouse.toLocaleString()}</p>`
-        : ``
-      }
-      <p>${description}</p>
+      <h5>${name}</h5>
     </section>
   `
 }
