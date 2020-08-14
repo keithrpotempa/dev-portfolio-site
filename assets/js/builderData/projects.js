@@ -23,7 +23,7 @@ export default [
     description: "A Fate / Fudge dice roller written in vanilla JavaScript and HTML.",
     codeLink: "https://github.com/keithrpotempa/FateRoller",
     liveLink: "https://codesandbox.io/s/fate-dice-roller-7njmt?file=/index.html",
-    imgUrl: "images/pic01.jpg",
+    imgUrl: "https://res.cloudinary.com/krp/image/upload/v1597430455/keithpotempa.com/Projects/White_Fudge_Dice_tlurnu.jpg",
     altText: "alt text"
   },
   {
@@ -32,7 +32,7 @@ export default [
     description: "A self-inflicted code challenge written in vanilla HTML and JavaScript: recreate the classic dice game 'Going to Boston'.",
     codeLink: "https://github.com/keithrpotempa/DiceGame_GoingToBoston",
     liveLink: "https://codesandbox.io/s/going-to-boston-dice-game-4mryc?file=/index.html",
-    imgUrl: "images/pic01.jpg",
+    imgUrl: "https://res.cloudinary.com/krp/image/upload/v1597431288/keithpotempa.com/Projects/games-dice_eovm9h.jpg",
     altText: "alt text"
   },
 ]

@@ -2602,8 +2602,13 @@ input, select, textarea {
 
 		.image.fit {
 			display: block;
-			margin: 0 0 2em 0;
+			margin: 1em 1em;
 			width: 100%;
+		}
+
+		.image.thumbnail {
+			max-width: 400px;
+			height: auto;
 		}
 
 			.image.fit img {
@@ -2634,7 +2639,7 @@ input, select, textarea {
 
 	ul {
 		list-style: disc;
-		margin: 0 0 2em 0;
+		/* margin: 0 0 2em 0; */
 		padding-left: 1em;
 	}
 
@@ -3070,11 +3075,11 @@ input, select, textarea {
 				opacity: 1;
 			}
 
-		.spotlights > section:nth-child(2) {
+		.spotlights > section:nth-child(odd) {
 			background-color: rgba(0, 0, 0, 0.05);
 		}
 
-		.spotlights > section:nth-child(3) {
+		.spotlights > section:nth-child(even) {
 			background-color: rgba(0, 0, 0, 0.1);
 		}
 

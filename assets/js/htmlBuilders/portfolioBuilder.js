@@ -14,15 +14,16 @@ const makeProjectHTML = (project, index) => {
   // Build the imageHTML now to place later
   const imageHTML = 
   `
-  <div class="image">      
-    <a href="${imgUrl}">
-      <img 
-        src="${imgUrl}" 
-        alt="${altText}" 
-        data-position="center center" 
-        class="project"
-      />
-    </a>
+  <div class="col-1">
+    <span class="image thumbnail fit">
+      <a href="${imgUrl}">
+        <img 
+          src="${imgUrl}" 
+          alt="${altText}" 
+          data-position="center center" 
+        />
+      </a>
+    </span>
   </div>
   `
 
@@ -33,7 +34,7 @@ const makeProjectHTML = (project, index) => {
       ${index % 2 === 0 ? imageHTML : ""}
       <div class="content">
         <div class="inner">
-          <h2>${name}</h2>
+          <h3>${name}</h3>
           <p>${date}</p>
           <p>${description}</p>
           <ul class="actions">
