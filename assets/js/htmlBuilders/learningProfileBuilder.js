@@ -2,11 +2,11 @@ import apiManager from "../apiManager.js";
 import objectSorter from "../helpers/objectSorter.js";
 
 const treeHouseProfile = apiManager.getTreeHouseProfile();
-const codeWarsProfile = apiManager.getCodeWarsProfile();
-Promise.all([treeHouseProfile, codeWarsProfile])
+// const codeWarsProfile = apiManager.getCodeWarsProfile();
+// Promise.all([treeHouseProfile, codeWarsProfile])
+Promise.all([treeHouseProfile])
   .then(response => response.forEach(profile => {
-    // learningProfile("Treehouse", profile)
-    console.log(profile)
+    learningProfile("Treehouse", profile)
   })) 
 
 const profileRowBuilder = (allRows) => {
