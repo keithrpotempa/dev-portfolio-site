@@ -5,7 +5,7 @@ export default [
     description: "A code snippet from code written for a drag-n-drop trip planning feature during my internship with SPLOR Travel.",
     codeLink: "https://github.com/keithrpotempa/horizontal-dragndrop-with-react-beautiful-dnd",
     liveLink: "https://codesandbox.io/s/horizontal-dragndrop-with-react-beautiful-dnd-9kneq",
-    imgUrl: "https://res.cloudinary.com/krp/image/upload/v1596032990/keithpotempa.com/Splor_DND_3.gif",
+    imgUrl: "https://res.cloudinary.com/krp/image/upload/v1596032990/keithpotempa.com/Projects/Splor_DND_3.gif",
     altText: "alt text"
   },
   {

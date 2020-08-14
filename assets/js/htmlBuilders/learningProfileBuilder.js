@@ -2,10 +2,11 @@ import apiManager from "../apiManager.js";
 import objectSorter from "../helpers/objectSorter.js";
 
 const treeHouseProfile = apiManager.getTreeHouseProfile();
-// const codeWarsProfile = apiManager.getCodeWarsProfile();
-Promise.all([treeHouseProfile])
+const codeWarsProfile = apiManager.getCodeWarsProfile();
+Promise.all([treeHouseProfile, codeWarsProfile])
   .then(response => response.forEach(profile => {
-    learningProfile("Treehouse", profile)
+    // learningProfile("Treehouse", profile)
+    console.log(profile)
   })) 
 
 const profileRowBuilder = (allRows) => {
@@ -32,7 +33,7 @@ const learningProfile = (platformName, data) => {
   let tableHtml = 
   `
     <section>
-      <h2>${platformName}</h2>
+      <h2>${platformName} Profile</h2>
       <div class="table-wrapper">
         <table>
           <thead>
