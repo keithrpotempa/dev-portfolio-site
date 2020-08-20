@@ -31,7 +31,7 @@ const makeProjectHTML = (project, index) => {
   // Odd appear on the right 
   return `
     <section>
-      ${index % 2 === 0 ? imageHTML : ""}
+      ${imageHTML}
       <div class="content">
         <div class="inner">
           <h3>${name}</h3>
@@ -69,7 +69,6 @@ const makeProjectHTML = (project, index) => {
           </ul>
         </div>
       </div>
-      ${index % 2 !== 0 ? imageHTML : ""}
     </section>
   `;
 }
