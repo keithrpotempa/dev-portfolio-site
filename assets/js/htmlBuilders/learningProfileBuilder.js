@@ -3,16 +3,16 @@ import objectSorter from "../helpers/objectSorter.js";
 
 const treeHouseProfile = apiManager.getTreeHouseProfile();
 const codeWarsProfile = apiManager.getCodeWarsProfile();
-Promise.all([treeHouseProfile, codeWarsProfile])
-  .then(response => {
-    learningProfile("Treehouse", response[0])
-    console.log("CodeWars", response[1])
-  })
-// Promise.all([treeHouseProfile])
-  // .then(response => response.forEach(profile => {
-    // learningProfile("Treehouse", profile)
-    // console.log("CodeWars", )
-  // })) 
+// Promise.all([treeHouseProfile, codeWarsProfile])
+//   .then(response => {
+//     learningProfile("Treehouse", response[0])
+//     console.log("CodeWars", response[1])
+//   })
+Promise.all([treeHouseProfile])
+  .then(response => response.forEach(profile => {
+    learningProfile("Treehouse", profile)
+    console.log("CodeWars", )
+  })) 
 
 const profileRowBuilder = (allRows) => {
   let html = "";
