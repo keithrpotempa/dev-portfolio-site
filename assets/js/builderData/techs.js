@@ -13,10 +13,6 @@ export default {
     "HTML": {
       iconClass: "fab fa-html5",
     },
-    "CSS": {
-      iconClass: "fab fa-css3-alt",
-      // description: "Material UI, Semantic UI, Bootstrap",
-    },
     "JSX": {
       iconClass: "",
       iconText: "JSX",
@@ -28,6 +24,30 @@ export default {
       iconClass: "", // TODO
       iconText: "Ap",
     },
+  },
+  "styling": {
+    "CSS": {
+      iconClass: "fab fa-css3-alt",
+      // description: "Material UI, Semantic UI, Bootstrap",
+    },
+    "SASS": {
+      iconClass: "fab fa-sass",
+    },
+    "Bootstrap": {
+      iconClass: "fab fa-bootstrap",
+    },
+    "Material UI": {
+      iconClass: "",
+      iconText: "MUI"
+    },
+    "Semantic UI": {
+      iconClass: "",
+      iconText: "SUI"
+    },
+    "Emotion": {
+      iconClass: "",
+      iconText: "Emo"
+    }
   },
   "backEnd": {
     "Python": {
@@ -53,8 +73,19 @@ export default {
       iconClass: "", // TODO
       iconText: "Has",
     },
+  },
+  "platforms": {
+    "GitHub": {
+      iconClass: "fab fa-github",
+    },
+    "Jira": {
+      iconClass: "fab fa-jira",
+    },
     "Docker": {
       iconClass: "fab fa-docker",
+    },
+    "Heroku": {
+      iconClass: "fab fa-salesforce",
     },
     "AWS": {
       iconClass: "fab fa-aws",

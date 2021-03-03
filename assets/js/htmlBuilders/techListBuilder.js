@@ -30,7 +30,9 @@ const makeList = (listName) => {
 
 const makeTechLists = () => {
   makeList("frontEnd");
+  makeList("styling");
   makeList("backEnd");
+  makeList("platforms");
 }
 
 makeTechLists()
