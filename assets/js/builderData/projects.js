@@ -1,5 +1,14 @@
 export default [
   {
+    name: "100VH Sidebar",
+    date: "2/25/21",
+    description: "A code snippet for a full-height sidebar with card accordions created for client. Vanilla HTML, jQuery, Bootstrap 4. Originally written in Django templates.",
+    codeLink: "https://github.com/keithrpotempa/100vh-bootstrap-sidemenu",
+    liveLink: "https://codesandbox.io/s/100vh-bootstrap-sidemenu-xkqm3",
+    imgUrl: "https://res.cloudinary.com/krp/image/upload/v1614730324/keithpotempa.com/Projects/SB_Sidebar_Tall_SM_tll3rs.gif",
+    altText: "Gif of a sidebar opening and closing"
+  },
+  {
     name: "Horizontal Drag-n-Drop Demo",
     date: "8/10/20",
     description: "A code snippet from code written for a drag-n-drop trip planning feature during my internship with SPLOR Travel.",
@@ -24,23 +33,5 @@ export default [
     codeLink: "https://github.com/nss-day-cohort-38/bangazon-ecommerce-web-app-iris-station",
     imgUrl: "https://res.cloudinary.com/krp/image/upload/v1597947487/keithpotempa.com/Projects/iris_station_400_wj5xdr.jpg",
     altText: "alt text"
-  },
-  {
-    name: "Fate / Fudge Dice Roller",
-    date: "10/18/19",
-    description: "A Fate / Fudge dice roller written in vanilla JavaScript and HTML.",
-    codeLink: "https://github.com/keithrpotempa/FateRoller",
-    liveLink: "https://codesandbox.io/s/fate-dice-roller-7njmt?file=/index.html",
-    imgUrl: "https://res.cloudinary.com/krp/image/upload/v1597430455/keithpotempa.com/Projects/White_Fudge_Dice_tlurnu.jpg",
-    altText: "some Fate / Fudge dice"
-  },
-  {
-    name: "'Going to Boston' Dice Game",
-    date: "12/13/19",
-    description: "A self-inflicted code challenge written in vanilla HTML and JavaScript: recreate the classic dice game 'Going to Boston'.",
-    codeLink: "https://github.com/keithrpotempa/DiceGame_GoingToBoston",
-    liveLink: "https://codesandbox.io/s/going-to-boston-dice-game-4mryc?file=/index.html",
-    imgUrl: "https://res.cloudinary.com/krp/image/upload/v1597431288/keithpotempa.com/Projects/games-dice_eovm9h.jpg",
-    altText: "some normal six-sided dice"
   },
 ]
