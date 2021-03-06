@@ -2,9 +2,9 @@ export default [
   {
     name: "100VH Sidebar",
     date: "2/25/21",
-    description: "A full-height sidebar with card accordions created for client. Written in Django templates using Bootstrap 4.",
-    // codeLink: "",
-    // liveLink: "",
+    description: "A code snippet for a full-height sidebar with card accordions created for client. Vanilla HTML, jQuery, Bootstrap 4. Originally written in Django templates.",
+    codeLink: "https://github.com/keithrpotempa/100vh-bootstrap-sidemenu",
+    liveLink: "https://codesandbox.io/s/100vh-bootstrap-sidemenu-xkqm3",
     imgUrl: "https://res.cloudinary.com/krp/image/upload/v1614730324/keithpotempa.com/Projects/SB_Sidebar_Tall_SM_tll3rs.gif",
     altText: "Gif of a sidebar opening and closing"
   },
